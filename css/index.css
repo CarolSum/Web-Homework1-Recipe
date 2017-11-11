@@ -1,0 +1,287 @@
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body{
+    font-family: 'Merriweather', serif;
+    color: #666;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+
+
+
+img{
+    max-width:100%;	
+    height: auto;
+    width: auto;
+}
+
+
+h2,h3{
+    font-weight: 600;
+    color: #000;
+}
+
+p { 
+    color:#333;
+}
+
+a {
+   color: #17B3E8;
+   transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: #666;
+    text-decoration: none;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+hr{
+    max-width: 50px;
+    border-color: #FFDE00;
+    border-width: 5px;
+}
+
+
+header{
+    background: url(http://wx4.sinaimg.cn/mw690/ee0f8ddcgy1fjkmwapkwsj215z0s1e81.jpg) no-repeat scroll center center ;
+    background-size: cover;
+    height: 750px;
+}
+
+.navbar-default .navbar-brand {
+    font-family: Helvetica,Arial,cursive;
+    color: #FFDE00;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .nav li a{
+    text-transform: uppercase;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus{
+    outline: 0;
+    color: #FFDE00;
+}
+
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 20px 0;
+        border: 0;
+        background-color: transparent;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        transition: all .3s;
+    }
+    .navbar-default.navbar-shrink {
+        padding: 0;
+        background-color: #fff;
+		border-bottom: 2px solid #FFDE00;
+    }
+	
+	.navbar-default.navbar-shrink .nav li a{
+        color: #444;
+    }
+	.navbar-default.navbar-shrink .nav li a:hover,
+	.navbar-default.navbar-shrink .nav li a:focus{
+        color: #FFDE00;
+    }
+	
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Carousel Header Styles */
+.header-text {
+    position: absolute;
+    top: 25%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+.header-text h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 70px;
+}
+.header-text hr{
+    margin: 30px auto;
+}
+.header-text p{ 
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}
+.header-text .btn-header{
+    background-color: #FFDE00;
+    border:none;padding: 18px 45px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 3px solid #FFDE00;
+    border-radius: 4px;
+}
+.header-text .btn-header:hover{
+    background-color: rgba(255, 222, 0, 0.9);
+    color: #fff;
+    border: 3px solid rgba(241, 210, 4, 0.9);
+}
+
+
+.box-content {
+    padding: 100px 0;
+}
+
+.box-content .heading{
+    margin-bottom: 50px; 
+    text-align: center;
+}
+.box-content.box-style-1{
+    background-color: #F6F7F8;
+}
+.box-content.box-style-2{
+    background-color: #fff;
+}
+.box-content.box-style-3{
+    background: url(http://wx4.sinaimg.cn/mw690/ee0f8ddcgy1fjkmwrxylkj21640qqav3.jpg) no-repeat fixed center center ;
+    background-size: cover;
+}
+.box-content.box-style-4{
+    background-color: #DDA06F;
+}
+
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(255, 222, 0,.9);
+    transition: all .35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    padding: 0 15px;
+    position: absolute;
+    font-size: 22px;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+
+.box-content.box-3 .box-item{
+    background-color: #fff;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+} 
+
+.box-content.box-3 .box-item .content{
+    padding: 10px 30px 30px;
+
+} 
+.box-content.box-3 .box-item .content h3{
+    font-weight: bold;
+    color: #111;
+    font-size: 19px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+} 
+
+.box-content.box-3 .box-item .content p {
+    color: #666;
+}
+.box-content.box-3 .box-item .content span{
+    color: #bbb;
+    font-size: 15px;
+}
+
+
+.box-content.box-4 .box-item,
+.box-content.box-4 .box-item p{
+    color:#fff;
+}
+.box-content.box-4 blockquote {
+    position: relative;
+    padding: 50px 100px 20px;
+    text-align: center;
+    font-size: 40px; 
+    border:none;
+    line-height: 1.2;
+}
+.box-content.box-4 blockquote:before, .box-content.box-4 blockquote:after{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 100px;
+    line-height: 1; 
+}
+.box-content.box-4 blockquote:before {
+    top: 0;
+    left: 0;
+    content: "\201C"; 
+}
+.box-content.box-4 blockquote:after {
+    top: 0;
+    right: 0;
+    content: "\201D"; 
+}
+
+
+.btn {
+	border-radius: 2px;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;	
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 13px;
+}
